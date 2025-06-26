@@ -7,6 +7,12 @@ function DeleteTask(index) {
     DisplayTasks(); // Refresh the task list display
 }
 
+function DeleteAllTasks() {
+    taskList = []; // Clear the task list
+    localStorage.removeItem("taskList"); // Remove from local storage
+    DisplayTasks(); // Refresh the task list display
+}
+
 function DisplayTasks()
 {
     let taskContainer = document.querySelector(".taskContainer");

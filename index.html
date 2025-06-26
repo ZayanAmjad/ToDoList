@@ -11,7 +11,11 @@
     <div class="inputContainer">
         <input type="text" id="taskInput" placeholder="Add a new task...">
         <input type="date" id="taskDate" placeholder="Select date">
-        <button onclick="AddTask()" id="addTaskButton">Add Task</button>
+        <div class="buttonRow">
+            <button onclick="AddTask()" class="TaskButton">Add Task</button>
+            <button onclick="DeleteAllTasks()" class="TaskButton">Clear All Tasks</button>
+        </div> 
+
     </div>
 
     <div class="taskContainer"></div>
